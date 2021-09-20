@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return <React.Fragment>
-    <Aloha />
+    <Aloha name="Monday" isGreeting/>
     <Image alt="img" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"/>
   </React.Fragment>}
 
