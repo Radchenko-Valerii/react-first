@@ -8,7 +8,7 @@ class ImgWrapper extends Component {
     const { profilePicture,  firstName, lastName} = this.props;
     return (
       <div className = "imgWrapper">
-      <img src={profilePicture} alt={firstName + ' ' + lastName}> 
+      <img className ="img" src={profilePicture} alt={firstName + ' ' + lastName}> 
       </img>
       </div>
     );
