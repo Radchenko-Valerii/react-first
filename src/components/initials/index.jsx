@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
-
+const stc = require('string-to-color');
 
 
 class Initials extends Component {
   render() {
-    const {firstName, lastName} = this.props
-    const symbName =((firstName + " " + lastName)
-        .trim()
-        .split(' ')
-        .map((word) => word[0])
-        .join('')
+    const {name} = this.props
+
+    const symbName =(name
+    .trim()
+    .split(' ')
+    .map((word) => word[0])
+    .join('')
     )
-   console.log(symbName)
+   
+    const initialsStyle = {
+      background: stc(symbName)
+    }
     return (
-      <div classNames="initials"  className="initials">
+      <div style={initialsStyle} classNames="initials"  className="initials">
           {symbName}
       </div>
     );

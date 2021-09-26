@@ -52,12 +52,9 @@ code {
 .initials {
   position: absolute;
   inset: 0;
-  
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* background-color: black; */
   color: white;
 }
 
@@ -86,6 +83,10 @@ code {
   color: white;
   border-color: red;
   background-color: red;
+}
+
+.hidden{
+  display: none;
 }
 
 .clicked-card{
